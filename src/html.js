@@ -14,23 +14,14 @@ class Html extends Component {
       <html op="news" lang="en">
         <head>
           {this.props.headComponents}
-
           <meta name="referrer" content="origin" />
           <meta charSet="utf-8" />
-          <meta
-            name="description"
-            content="Gatsby example site demoing sass plugin"
-          />
+          <meta name="description" content="Gatsby example site demoing sass plugin" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          <title>Using gatsby-plugin-sass</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <style id="gatsby-inlined-css" dangerouslySetInnerHTML={{ __html: '' }} />
         </head>
-        <body style={{
-            backgroundColor: "#ff0"
-        }}>
+        <body>
           <div
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}

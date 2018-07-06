@@ -1,0 +1,25 @@
+body {
+    background: #f9f9f9;
+    background-size: cover;
+    font-size: 1.2em;
+    color: #333;
+}
+
+blockquote {
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+    color: #999;
+    border-left-color: rgb(200,230,0);
+}
+
+h1 {
+    border-right: 0.8rem solid rgb(200,230,0);
+    display: inline-block;
+    padding-right: .5rem;
+}
+
+.metaTitle {
+    font-size: 1.4rem;
+    font-style: italic;
+    text-align: right;
+}

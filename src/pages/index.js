@@ -4,17 +4,27 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
-import { rhythm } from '../utils/typography'
+
+import '../styles/main.scss'
 
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
-
+ 
     return (
       <div>
         <Helmet title={siteTitle} />
-        <h1>Quasi ink</h1>
+        { 
+          posts.map((post, i) => {
+            return <article key={i}>
+              <h2><Link to={post.node.fields.slug}>{post.node.frontmatter.title}</Link></h2>
+              <p>{post.node.frontmatter.date}</p>
+              <p>{post.node.excerpt}</p>
+            </article>
+          })
+        }
+        <hr />
         <Bio />
       </div>
     )

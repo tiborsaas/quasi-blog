@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
-    author: 'Kyle Mathews',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    title: 'Quasi.ink',
+    author: 'Tibor Szász',
+    description: 'Programming, art, music, science',
+    siteUrl: 'https://quasi.ink',
   },
   pathPrefix: '/gatsby-starter-blog',
   plugins: [
@@ -36,6 +36,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
