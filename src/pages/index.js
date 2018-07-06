@@ -5,17 +5,17 @@ import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
 
-import '../styles/main.scss'
+import '../styles/main.css'
 
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
- 
+
     return (
       <div>
         <Helmet title={siteTitle} />
-        { 
+        {
           posts.map((post, i) => {
             return <article key={i}>
               <h2><Link to={post.node.fields.slug}>{post.node.frontmatter.title}</Link></h2>

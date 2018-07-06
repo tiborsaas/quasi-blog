@@ -21,7 +21,7 @@ class Template extends React.Component {
       <Container
         style={{
           maxWidth: rhythm(28),
-          fontFamily: 'merriweather',
+          fontFamily: {merriweather},
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
