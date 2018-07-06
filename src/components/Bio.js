@@ -9,7 +9,7 @@ class Bio extends React.Component {
         display: 'flex',
         marginBottom: rhythm(2.5),
       }}>
-        <p>Written by Tibor Saas | Check out my portfolio: <a href="http://tibor.szasz.hu">http://tibor.szasz.hu</a></p>
+        <p>Written by Tibor Szász | Check out my portfolio: <a href="http://tibor.szasz.hu">http://tibor.szasz.hu</a></p>
       </div>
     )
   }

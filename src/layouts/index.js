@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { Container } from 'react-responsive-grid'
+import Bio from '../components/Bio'
 
 import { rhythm, scale } from '../utils/typography'
 import merriweather from 'typeface-merriweather';
-import montserrat from 'typeface-montserrat';
 
 class Template extends React.Component {
   render() {
@@ -42,6 +42,10 @@ class Template extends React.Component {
         <p className='metaTitle'>{data.site.siteMetadata.description}</p>
 
         {children()}
+
+        <footer>
+          <Bio />
+        </footer>
       </Container>
     )
   }

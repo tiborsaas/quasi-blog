@@ -2,9 +2,6 @@ import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-
-import Bio from '../components/Bio'
-
 import '../styles/main.css'
 
 class BlogIndex extends React.Component {
@@ -19,13 +16,11 @@ class BlogIndex extends React.Component {
           posts.map((post, i) => {
             return <article key={i}>
               <h2><Link to={post.node.fields.slug}>{post.node.frontmatter.title}</Link></h2>
-              <p>{post.node.frontmatter.date}</p>
+              <p className="date">{post.node.frontmatter.date}</p>
               <p>{post.node.excerpt}</p>
             </article>
           })
         }
-        <hr />
-        <Bio />
       </div>
     )
   }
